@@ -1,0 +1,82 @@
+:root {
+  --darkcyan: hsl(184, 100%, 22%);
+  --vdarkcyan: hsl(179, 100%, 13%);
+  --brightorg: rgb(227, 132, 36);
+}
+
+.container {
+  display: flex;
+  font-size: 15px;
+  flex-direction: row;
+}
+
+img {
+  width: fit-content;
+  height: 25px;
+  margin: 20px 0 0 20px;
+}
+
+.title {
+  font-family: Lexend Deca, sans-serif;
+  margin: 20px 0 0 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.text {
+  font-family: Shoulders Display, sans-serif;
+  margin: 20px 0 40px 20px;
+  font-weight: 400;
+  color: white;
+  margin-right: 35px;
+}
+
+button {
+  text-align: center;
+  font-size: 12px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 30px 20px;
+  width: 140px;
+  height: 40px;
+  border-color: white;
+  cursor: pointer;
+}
+
+.btn1 {
+  color: var(--brightorg);
+}
+
+.btn2 {
+  color: var(--darkcyan);
+}
+
+.btn3 {
+  color: var(--vdarkcyan);
+}
+
+.sedans {
+  background-color: var(--brightorg);
+}
+
+.suvs {
+  background-color: var(--darkcyan);
+}
+
+.luxury {
+  background-color: var(--vdarkcyan);
+}
+
+.sedans,
+.suvs,
+.luxury {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    max-width: 380px;
+  }
+}
